@@ -6,7 +6,6 @@ urlpatterns = [
     path('', views.index,name='index'),
     path('item/',views.item, name='item'),
     path('<int:item_id>',views.detail,name='detail'),
- # adding items
- path('add',view.create_item, name='create_item'),
+    path('add',views.create_item, name='create_item'),
 
 ]
