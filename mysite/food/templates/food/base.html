@@ -25,6 +25,11 @@
               <a class="nav-item" href="#">view item</a>
             </div>
           </nav>
+          {% if  messages %}
+          {% for message in messages %}
+          {{ messages}}
+          {% endfor %}
+          {% endif %}
         <script src="" async defer></script>
         {% block body %}
         {% endblock %}
