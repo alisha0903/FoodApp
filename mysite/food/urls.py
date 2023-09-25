@@ -9,5 +9,7 @@ urlpatterns = [
     # edit function
     path('add',views.create_item, name='create_item'),
 # update function
-    path('update', )
+    path('update/<int:id>',views.update_item,name='update_item' ),
 ]
+#delete functionality
+path('delete/<int:id'>,views.delete_item,name='delete_item')
