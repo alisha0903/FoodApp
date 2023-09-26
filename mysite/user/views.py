@@ -6,6 +6,7 @@ def register(request):
     if request.method== 'POST':
         form =UserCreationForm(request.POST)
         if form.is_valid():
+            form.save()
             username=form.cleaned_data.get('usrname')
             messages.success(request,f'welcome {username} your account is created')
             return redirect('food:index')
