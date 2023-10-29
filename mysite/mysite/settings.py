@@ -124,6 +124,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 LoGIN_REDIRECT_URL='food:index'
+LOGIN_URL ='login'
+MEDIA_ROUTE = os.path.join()
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
