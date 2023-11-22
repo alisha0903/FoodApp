@@ -45,7 +45,8 @@ clas Create_item(CreateView):
     
     def form_valid(self,form):
        form.instance.username
-    template_name = ".html"
+    template_name = "food/item-form.html"
+    return super().form_valid(form)
 
 
 def update_item(request,id):
